@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Alexandria', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--sec-color);
+}
+:root{
+    --main-color: #3A3D36;
+    --sec-color: #DFDCD5;
+    --third-color: #D5D3CF;
+    --font-color: #707070;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header nav {
+    background-color: var(--main-color);
+}
+header nav .container .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+header nav .container .row .nav-text ul{
+    display: flex;
+}
+header nav .container .row .nav-text ul li{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+header nav .container .row .logo{
+    color: var(--sec-color);
+}
+header nav .container .row .nav-text ul li a{
+    color: white;
+    padding: 23px;
+    transition: all 0.6s;
+}
+header nav .container .row .nav-text ul li a:hover{
+    background-color: white;
+    color: black;
+    border-bottom: 3px solid red;
+}
+main .sec1{
+    margin: 80px 0px;
+}
+main .sec1 .container{
+    display: flex;
+    justify-content: space-between;
+}
+main .sec1 .container .sec1-text{
+    width: 50%;
+}
+main .sec1 .container .sec1-text p{
+    margin-bottom: 20px;
+}
+main .sec1 .container h3{
+    margin-bottom: 20px;
+}
+main .sec1 .container h1{
+    color: white;
+    background-color: red;
+    width: 19%;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    animation-name: agel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+main .sec1 .container .sec1-img{
+    width: 40%;
+}
+main .sec1 .container .sec1-img img{
+    width: 100%;
+    box-shadow: 15px 15px #3A3D36;
+}
+main .sec2 {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 100px;
+    padding-bottom: 550px;
+    border-bottom: 3px solid var(--font-color);
+    border-top: 3px solid var(--font-color);
+
+}
+main .sec2 .sec2-text h1{
+    color: var(--font-color);
+    font-size: 40px;
+    padding: 20px;
+}
+main .sec2 .sec2-imgs img{
+    width: 40%;
+}
+footer{
+    background-color: var(--main-color);
+    padding: 30px 0;
+}
+footer .container{
+    display: flex;
+    color: var(--sec-color);
+    justify-content: space-around;
+}
+footer .container ul li a{
+    color: var(--sec-color);
+    transition: all 0.6s;
+}
+footer .container ul li{
+    margin: 15px 0;
+}
+footer .container .child{
+    width: 30%;
+}
+footer .container .child ul li a:hover{
+    color: white;
+}
+footer .container .child3{
+    text-align: center;
+    margin: 15px 0;
+    width: 30%;
+}
+footer .container .child3 i{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.4);
+    transition: all 0.6s;
+}
+footer .container .child3 i:hover{
+    color: rgba(0,0,0,0.4);
+    background-color: white;
+}
+
+/* السياسة */
+main .sec1-politics .container{
+    background-color: white;
+    border: 2px solid red;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+main .sec1-politics .container .child{
+    width: 45%;
+}
+main .sec1-politics .container .child p{
+    margin: 30px 0;
+    font-size: 15px;
+    line-height: 2;
+}
+main .sec1-politics .container .video{
+    width: 50%;
+}
+main .sec1-politics .container .video iframe{
+    width: 100%;
+}
+main .sec2-politics .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+main .sec2-politics .container .child{
+    width: calc(95%/3);
+    margin-bottom: 30px;
+    background-color: white;
+    border-bottom: 3px solid red;
+    cursor: pointer;
+    position: relative;
+}
+main .sec3-economics .container .triple .child .child-img,
+main .sec2-politics .container .child .child-img{
+    width: 100%;
+    overflow: hidden;
+}
+main .sec2-politics .container .child .child-img:hover img{
+    transform: scale(1.1);
+}
+main .sec2-politics .container .child .child-img img{
+    width: 100%;
+    transition: all 0.6s;
+}
+main .sec2-politics .container .child .child-text{
+    padding: 20px;
+}
+main .sec2-politics .container .child .child-hidden-text{
+    position: absolute;
+    z-index: 999999;
+    color: black;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 1s;
+    top: 0%;
+}
+main .sec2-politics .container .child:hover h3{
+    text-decoration: underline;
+}
+main .sec2-politics .container .child:hover .child-hidden-text{
+    transform: scaleY(1);
+}
+main .sec2-politics .container .child:hover .child-img img{
+    opacity: 0.3;
+}
+main .container h2{
+    border-right: 5px solid red;
+    padding:0 10px;
+}
+main .sec2-economics .container{
+    display: flex;
+    justify-content: space-between;
+}
+main .sec2-economics .container .small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .sec2-economics .container .small .child{
+    width: 49%;
+}
+main .sec2-economics .container .large,
+main .sec2-economics .container .small{
+    width: 49%;
+}
+main .sec2-economics .container .large img,
+main .sec2-economics .container .small img{
+    width: 100%;
+}
+
+main .sec3-economics .triple .child,
+main .sec2-economics .container .large .child,
+main .sec2-economics .container .small .child{
+    position: relative;
+    margin-bottom: 30px;
+    background-color: white;
+    border-bottom: 3px solid red;
+    cursor: pointer;
+    position: relative;
+    
+}
+main .sec2-economics .container .child .child-img{
+    width: 100%;
+    overflow: hidden;
+}
+main .sec3-economics .triple .child .child-img img,
+main .sec2-economics .container .child .child-img img{
+    transition: all 0.6s;
+}
+main .sec3-economics .container .triple .child .child-img:hover img,
+main .sec2-economics .container .child .child-img:hover img{
+    transform: scale(1.1);
+}
+main .sec3-economics .triple .child .child-hidden-text,
+main .sec2-economics .container .small .child .child-hidden-text,
+main .sec2-economics .container .large .child .child-hidden-text{
+    position: absolute;
+    z-index: 999999;
+    color: black;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 1s;
+    top: 0%;
+}
+main .sec3-economics .triple .child .child-text,
+main .sec2-economics .container .child .child-text{
+    padding: 20px;
+    line-height: 1.7;
+}
+main .sec3-economics .triple .child .child-text h3,
+main .sec2-economics .container .small .child .child-text h3{
+    font-size: 13px;
+}
+main .sec3-economics .triple .child:hover .child-hidden-text,
+main .sec2-economics .container .small .child:hover .child-hidden-text,
+main .sec2-economics .container .large .child:hover .child-hidden-text{
+    transform: scaleY(1);
+}
+main .sec2-economics .container .large .child:hover .child-text{
+    text-decoration: underline;
+}
+main .sec3-economics .triple .child:hover .child-img img,
+main .sec2-economics .container .small .child:hover .child-img img{
+    opacity: 0.3;
+}
+main .sec3-economics .triple{
+    display: flex;
+    justify-content: space-between;
+}
+main .sec3-economics .triple .child{
+    width: 24%;
+    position: relative;
+}
+main .sec3-economics .triple .child img{
+    width: 100%;
+    
+}
+
+
+/* photo slide */
+.slider-container{
+    position: relative;
+}
+.slider-container img {
+    position: absolute;
+    left: 30%;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+.slider-container img.active {
+    opacity: 1;
+}
+.slider-controls {
+    margin: auto;
+}
+.slider-controls .prev,
+.slider-controls .next {
+    background-color: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+}
+.slider-controls .prev {
+    float: left;
+    margin: 200px 150px;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+.slider-controls .next {
+    float: right;
+    margin: 200px 150px;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+.slider-controls .next:hover,
+.slider-controls .prev:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+.slider-controls .indicators {
+    width: 60%;
+    float: left;
+}
+.slider-controls .indicators ul {
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    z-index: 99999;
+    text-align: center;
+}
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled {
+    background-color: rgba(0,0,0,0.1);
+    cursor: no-drop;
+}
+
+/* Contact us */
+main .head-caption{
+    text-align: center;
+    margin: 40px auto;
+}
+main .head-caption h1{
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+main .container-contact-us{
+    width: 80%;
+    margin: 40px auto;
+    display : flex;
+    justify-content: space-between;
+}
+main .container-contact-us .child-left label,
+main .container-contact-us .child-left input{
+    display: block;
+    color: var(--main-color);
+    width: 100%;
+}
+main .container-contact-us .child-left input{
+    height: 44px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+main .container-contact-us .child-left textarea{
+    width: 638px; 
+    height: 160px;
+    outline: none;
+    border:none;
+    resize: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+main .container-contact-us .child-left button{
+    color: white;
+    display: block;
+    margin: 25px auto;
+    background-color: #484c43;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+main .container-contact-us .child-left button:hover{
+    background-color: #232520;
+}
+main .container-contact-us .child-left{
+    width: 55%;
+    padding: 15px;
+    background-color:#c7c4be;
+    border-top: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+main .container-contact-us .child-right{
+    width: 40%;
+    padding: 15px;
+    background-color:#c7c4be;
+    border-top: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+main .container-contact-us .child-right .child iframe{
+    width: 100%;
+}
+main .container-contact-us .child-right .parent .child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container-contact-us .child-right .parent .child:hover i{
+    color: #676c61;
+}
+main .container-contact-us .child-right .parent .child p{
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+main .container-contact-us .child-right .parent .child h5{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--main-color);
+}
+main .container-contact-us .child-right .parent .child i{
+    font-size: 20px;
+    color: var(--main-color);
+    padding: 10px;
+    transition: all 0.6s;
+}
+
+
+@keyframes agel {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: rgb(202, 7, 7);
+    }
+    100%{
+        background-color: red;
+    }
+}
